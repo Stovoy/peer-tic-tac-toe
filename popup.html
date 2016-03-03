@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript" src="peer.min.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="popup.js"></script>
+    </head>
+    <body>
+        Oh boy oh boy! Semi-useless peer to peer chat!
+        <br/><br/>
+        <label>Friendly Peer ID</label>
+        <input type="text" id="remote-peer-id"/>
+        <button id="connect">Connect</button>
+        <br/><br/>
+        <label>Your Peer ID</label>
+        <input type="text" id="local-peer-id" disabled/>
+        <br/><br/>
+        <textarea id="text-receiver" style="resize: none" disabled>Your peer's text will go here.</textarea>
+        <br/><br/>
+        <textarea id="text-sender" style="resize: none" placeholder="Text to send..."></textarea>
+        <br/><br/>
+        <button id="send" disabled>Send</button>
+        <span id="error"></span>
+    </body>
+</html>
